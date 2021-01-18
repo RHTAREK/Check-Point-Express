@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <img src="image/points.png" alt="closing" width="50" height="50" ></img> 
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="/ourServices">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="/contactUs">Contact Us</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <p>Date: <span id="datetime"></span></p>
+        <p>Time:<span id ='timing'></span></p>
+        <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2))+"/"+(("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear());
+        document.getElementById("timing").innerHTML =((dt.getHours())+":"+ ((dt.getMinutes())));
+       </script>
+
+
+      </span>
+    </div>
+  </nav>
